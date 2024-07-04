@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered and Styled Tabs</title>
+    <title>Your Website Title</title>
     <style>
+        /* CSS for logo */
+        .logo-container {
+            text-align: center; /* Center the logo horizontally */
+            margin: 20px 0; /* Add margin for spacing */
+        }
+        
+        .logo-container img {
+            max-width: 100%; /* Ensure the logo scales down proportionally */
+            height: auto; /* Maintain aspect ratio */
+        }
         /* Basic styling for the tab bar */
         .tab {
             overflow: hidden;
@@ -49,6 +59,10 @@
     </style>
 </head>
 <body>
+    <div class="logo-container">
+        <img src="Test.jpg" alt="Test Logo">
+    </div>
+
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'Tab1')">Home Page</button>
         <button class="tablinks" onclick="openTab(event, 'Tab2')">About Us</button>
