@@ -39,16 +39,21 @@
             padding: 20px;
             border: 1px solid #ccc;
             border-top: none;
-            border-radius: 0 0 5px 5px; /* Rounded bottom corners for tab content */
+            border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+        }
+        
+        /* Display the first tab content by default */
+        #Tab1 {
+            display: block;
         }
     </style>
 </head>
 <body>
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'Tab1')">Home Page</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab2')">Shop Images</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab3')">About US</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab3')">Review Us</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">About Us</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">Shop Images & Prices</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab4')">Review Us</button>
     </div>
     
     <div id="Tab1" class="tabcontent">
@@ -89,6 +94,10 @@
             // Activate the button that opened the tab
             evt.currentTarget.classList.add("active");
         }
+        
+        // Show the first tab content by default
+        document.getElementById("Tab1").style.display = "block";
+        document.querySelector(".tab button:nth-child(1)").classList.add("active"); // Activate the first tab button by default
     </script>
 </body>
 </html>
