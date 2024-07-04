@@ -3,47 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tab Bar Example</title>
+    <title>Centered and Styled Tabs</title>
     <style>
-        /* Basic styling to make it look like a tab bar */
+        /* Basic styling for the tab bar */
         .tab {
             overflow: hidden;
-            border: 1px solid #f4d003;
-            background-color: #0714ff;
-            margin-bottom: 15px;
+            background-color: #f1f1f1;
+            border-radius: 5px 5px 0 0; /* Rounded top corners */
+            margin: 0 auto; /* Centering the tab bar */
+            display: table; /* Make the tab bar behave like a table */
+            border-spacing: 10px; /* Space between tabs */
         }
         
         .tab button {
             background-color: inherit;
-            float: left;
             border: none;
             outline: none;
             cursor: pointer;
             padding: 10px 20px;
             transition: background-color 0.3s;
+            border-top-left-radius: 5px; /* Rounded top left corner for buttons */
+            border-top-right-radius: 5px; /* Rounded top right corner for buttons */
         }
         
         .tab button:hover {
-            background-color: #f40505;
+            background-color: #ddd;
         }
         
         .tab button.active {
-            background-color: #41f10b;
+            background-color: #ccc;
         }
         
         .tabcontent {
             display: none;
             padding: 20px;
+            border: 1px solid #ccc;
             border-top: none;
+            border-radius: 0 0 5px 5px; /* Rounded bottom corners for tab content */
         }
     </style>
 </head>
 <body>
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'Tab1')">Home Page</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab2')">Images</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab3')">About Us</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab4')">Review Us!</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">Shop Images</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">About US</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">Review Us</button>
     </div>
     
     <div id="Tab1" class="tabcontent">
@@ -57,11 +62,6 @@
     </div>
     
     <div id="Tab3" class="tabcontent">
-        <h3>Content of Tab 3</h3>
-        <p>This is the content of Tab 3.</p>
-    </div>
-
-    <div id="Tab4" class="tabcontent">
         <h3>Content of Tab 3</h3>
         <p>This is the content of Tab 3.</p>
     </div>
