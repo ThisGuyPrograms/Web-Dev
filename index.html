@@ -21,6 +21,19 @@
             background-repeat: repeat; /* Repeat the image */
             background-size: 520px 600px;
         }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer h2 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-family: 'Arial Black', sans-serif;
+        }
 
         /* Basic styling for the tab bar */
         .tab {
@@ -114,11 +127,23 @@
         <p>Welcome to The Parlour</p>
         <p>For information about our technicians and to book appointments visit <a href = "#" ,onclick="openTab(event, Tab2)">Book Now!</a></p>
         <p>Follow us on facebook!</p>
-        <a href="https://www.facebook.com/people/The-Parlour/100058313426271/" target="_blank" aria-label="Facebook">
-            <i class="fab fa-facebook"></i></a>
+        </a>
     </div>
     
     <div id="Tab2" class="tabcontent">
+        <div class="technician">
+            <h3>Jessica Bautsch</h3>
+            <p>Jessica is the owner of the Parlour one of our most popular stylist</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/people/The-Parlour/100058313426271/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/jess_at.the.parlour/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
         <div class="technician">
             <h3>Nail Tech: Kristan Umphrey</h3>
             <p>Kristan is a skilled nail technician with over 8 years of experience in nail art, gel extensions, and classic manicures. She takes pride in her creativity and precision, ensuring that each client leaves with nails that look flawless and reflect their personal style.</p>
@@ -162,7 +187,7 @@
                 <a href="https://www.facebook.com/lyndee.maddron.7/" target="_blank" aria-label="Facebook">
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a href="https://www.instagram.com/lyndeebledsoe" target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com/lyndeeb.hair/" target="_blank" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/lyndeebledsoe" target="_blank" aria-label="LinkedIn">
@@ -206,5 +231,20 @@
         document.getElementById("Tab1").style.display = "block";
         document.querySelector(".tab button:nth-child(1)").classList.add("active"); // Activate the first tab button by default
     </script>
+    <div class="footer-section">
+        <h2>Follow Us on Facebook!</h2>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <h3>Need Directions?</h3>
+        <p>We are located at 6 South White St. Athens, TN 37303</p>
+        <div class="footer-buttons">            
+            <a href="#" aria-label="https://maps.app.goo.gl/7DBsrQaaWws1Afdm9"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
