@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* CSS for logo */
         .logo-container {
@@ -63,6 +64,38 @@
         #Tab1 {
             display: block;
         }
+          /* Styling for the social media icons */
+          .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between icons */
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: inherit; /* Keep the icon color the same */
+            font-size: 2em; /* Increase icon size */
+        }
+
+        .social-icons a:hover {
+            color: #0077b5; /* Example hover color */
+        }
+         /* Styling for technician profiles */
+         .technician {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .technician h3 {
+            margin-bottom: 10px;
+        }
+
+        .technician p {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -73,27 +106,78 @@
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'Tab1')">Home Page</button>
         <button class="tablinks" onclick="openTab(event, 'Tab2')">About Us</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab3')">Shop Images & Prices</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">Book Now!</button>
         <button class="tablinks" onclick="openTab(event, 'Tab4')">Review Us</button>
     </div>
     
     <div id="Tab1" class="tabcontent">
-        <h3>Content of Tab 1</h3>
-        <p>This is the content of Tab 1.</p>
+        <h3>Home Page</h3>
+        <p>Welcome to The Parlour</p>
+        <p>Feel free to use</p>
     </div>
     
     <div id="Tab2" class="tabcontent">
-        <h3>Content of Tab 2</h3>
-        <p>This is the content of Tab 2.</p>
+        <h3>About Us</h3>
+        <p></p>
     </div>
     
     <div id="Tab3" class="tabcontent">
-        <h3>Content of Tab 3</h3>
-        <p>This is the content of Tab 3.</p>
+        <div class="technician">
+            <h3>Nail Tech: Kristan Umphrey</h3>
+            <p>Kristan is a skilled nail technician with over 8 years of experience in nail art, gel extensions, and classic manicures. She takes pride in her creativity and precision, ensuring that each client leaves with nails that look flawless and reflect their personal style.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/kristanumphrey" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/kristanumphrey" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com/kristanumphrey" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <a href="https://bookwithme.com">Book Me!</a>
+        </div>
+
+        <!-- Lauren Hatton -->
+        <div class="technician">
+            <h3>Stylist: Lauren Hatton</h3>
+            <p>Lauren has a decade of experience in creating modern, trendy haircuts and stunning color transformations. Known for her bold and artistic style, Lauren brings a fresh, vibrant energy to her work, ensuring every client looks and feels amazing.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/laurenhatton" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/laurenhatton" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/laurenhatton" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <a href="https://bookwithme.com">Book Me!</a>
+        </div>
+
+        <!-- Lyndee Bledsoe -->
+        <div class="technician">
+            <h3>Stylist: Lyndee Bledsoe</h3>
+            <p>Lyndee is known for her ability to create effortlessly chic looks that are both stylish and easy to maintain. Whether it's a special occasion or a daily look, Lyndee's expertise in hair texture and styling techniques make her a trusted favorite among clients.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/lyndee.maddron.7/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/lyndeebledsoe" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lyndeebledsoe" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <a href="https://bookwithme.com">Book Me!</a>
+        </div>
     </div>
 
     <div id="Tab4" class="tabcontent">
-        <h4>Content of Tab 4</h4>
+        <h4>Review us</h4>
         <p>This is the content of Tab 4.</p>
     </div>
 
