@@ -3,18 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Website</title>
+    <title>The Parlour</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* CSS for logo */
-        .logo-container {
-            text-align: center; /* Center the logo horizontally */
-            margin: 20px 0; /* Add margin for spacing */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-        
-        .logo-container img {
-            max-width: 100%; /* Ensure the logo scales down proportionally */
-            height: auto; /* Maintain aspect ratio */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .title {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-family: 'Times New Roman', serif;
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        .spacer {
+            flex-grow: 1;
         }
         body {
            /*background-image: url(HexPatternBackground.png);
@@ -112,10 +132,11 @@
     </style>
 </head>
 <body>
-    <div class="logo-container">
-        <img src="TheParlourLogo.png" alt="The Parlour Logo">
-    </div>
-
+    <header>
+        <div class="title">The Parlour</div>
+        <div class="spacer"></div>
+        <div class="subtitle">Hair & Nail Salon</div>
+    </header>
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'Tab1')">Home Page</button>
         <button class="tablinks" onclick="openTab(event, 'Tab2')">Book Now!</button>
