@@ -22,21 +22,6 @@
             background-color: rgb(238, 234,227);
         }
 
-        .title {
-            font-family: 'Arial Black', sans-serif;
-            font-size: 32px;
-            font-weight: medium;
-        }
-
-        .subtitle {
-            font-family: 'Times New Roman', serif;
-            font-size: 24px;
-            font-style: italic;
-        }
-
-        .spacer {
-            flex-grow: 1;
-        }
         footer {
             background-color: #1a1a1a;
             color: rgb(238, 234,227);
@@ -50,6 +35,41 @@
             font-size: 24px;
             font-family: 'Arial Black', sans-serif;
         }
+
+        .main-picture img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .spacer {
+            flex-grow: 1;
+        }
+
+        .sub-pictures {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .sub-pictures img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .subtitle {
+            font-family: 'Times New Roman', serif;
+            font-size: 24px;
+            font-style: italic;
+        }
+
         .tab {
             overflow: hidden;
             border-radius: 5px 5px 0 0;
@@ -124,11 +144,10 @@
             margin-bottom: 10px;
         }
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+        .title {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 32px;
+            font-weight: medium;
         }
     </style>
 </head>
@@ -146,13 +165,26 @@
 
     <!-- Tab1 content in a box -->
     <div id="Tab1" class="tabcontent">
-        <div class="tabcontent-box">
-            <h3>Home Page</h3>
-            <p>Welcome to The Parlour</p>
-            <p>For information about our technicians and to book appointments visit <a href="#" onclick="openTab(event, 'Tab2')">Book Now!</a></p>
-            <p>Follow us on Facebook!</p>
+    <div class="tabcontent-box">
+        <h3>Home Page</h3>
+        <p>Welcome to The Parlour</p>
+        
+        <p>For information about our technicians and to book appointments visit <a href="#" onclick="openTab(event, 'Tab2')">Book Now!</a></p>
+
+        <!-- Main Picture -->
+        <div class="main-picture">
+            <img src="main-picture.jpg" alt="Main Image" style="width: 100%; border-radius: 8px;">
+        </div>
+
+        <!-- Sub Pictures -->
+        <div class="sub-pictures">
+            <img src="parlour-interior.jpg" alt="Sub Image 1" style="width: 30%; margin: 10px; border-radius: 8px;">
+            <img src="parlour-interior2.jpg" alt="Sub Image 2" style="width: 30%; margin: 10px; border-radius: 8px;">
+            <img src="parlour-interior3.jpg" alt="Sub Image 3" style="width: 30%; margin: 10px; border-radius: 8px;">
         </div>
     </div>
+</div>
+
 
     <div id="Tab2" class="tabcontent">
        <!-- <div class="technician">
