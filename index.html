@@ -43,13 +43,13 @@
         }
         footer {
             background-color: #1a1a1a;
-            color: rgb(111, 178, 245);
+            color:  rgb(238, 234,227);
             padding: 40px 20px;
             text-align: center;
         }
 
         footer h2 {
-            color: rgb(111, 178, 245);
+            color: rgb(238, 234,227);
             margin-bottom: 20px;
             font-size: 24px;
             font-family: 'Arial Black', sans-serif;
@@ -58,7 +58,6 @@
         /* Basic styling for the tab bar */
         .tab {
             overflow: hidden;
-            background-image: url("parlour-tab-background.jpg");
             border-radius: 5px 5px 0 0; /* Rounded top corners */
             margin: 0 auto; /* Centering the tab bar */
             display: table; /* Make the tab bar behave like a table */
@@ -89,8 +88,12 @@
             padding: 20px;
             border: 1px solid rgb(227,224,216);
             border-top: none;
-            border-radius: 0 0 5px 5px; /* Rounded bottom corners */
-            background-color: rgb(227,224,216);
+            border-radius: 0 0 5px 5px;
+            background-image: url('parlour-tab-background.jpg'); /* Apply the background image here */
+            background-size: cover; /* Make sure the image covers the content area */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-position: center; /* Center the background image */
+            background-color: rgb(227,224,216); /* Fallback background color */
         }
         
         /* Display the first tab content by default */
